@@ -1,4 +1,3 @@
-# Yellow Perch Length-Weight Analysis
 library(readxl)
 library(ggplot2)
 
@@ -34,6 +33,6 @@ ggplot(perch_data, aes(x = length, y = weight)) +
   geom_point() + 
   stat_function(fun = function(x) a * x^b, color = "blue") +
   theme_minimal() +
-  labs(title = "Length-Weight Relationship for Yellow Perch",
+  labs(title = "Length Weight Rel for Yellow Perch",
        x = "Length", 
        y = "Weight")
